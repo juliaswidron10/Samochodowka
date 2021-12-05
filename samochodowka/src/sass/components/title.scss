@@ -1,0 +1,30 @@
+@use '../base/vars' as *;
+
+.title-container{
+    max-width: 300px;
+    width: max-content;
+    margin-left: 1rem;
+h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    &.whitetext{
+        color: white;
+    }
+    &.darkbluetext{
+        color: $darkblue;
+    }
+}
+.lightblueunderline{
+    height: 4px;
+    width: 100%;
+    background-color: $lightblue;
+    margin-left: 1rem;
+}
+.darkblueunderline{
+    height: 4px;
+    width: 100%;
+    background-color: $darkblue;
+    margin-left: 1rem;
+}
+}
