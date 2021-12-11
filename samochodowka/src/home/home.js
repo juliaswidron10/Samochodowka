@@ -1,5 +1,7 @@
 import '../App.scss';
-import Title from '../components/title'
+import Title from '../components/title';
+import News from '../components/news';
+import LuckyNumber from '../components/lucky-number';
 import { useState, useEffect } from "react";
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -38,6 +40,66 @@ function Home() {
          <div className="idziennik dark"><a href="https://adfs.eduportal.koszalin.pl" ><Title title="iDziennik" underline="lightblue" text="white" /></a></div>
      </section>
 
+     <section className="top-section-homepage-tablet">
+         <div className="tablet-top-section">
+            <div className="covid-info dark"><a href="/wip">
+                <Title title="Covid-19 Updates" underline="lightblue" text="white" />
+                <p>News and updates about current Covid restritctions at our school</p></a></div>
+            <div className="specializarions light"><a href="/specializations">
+                <Title title="Specializations" underline="darkblue" text="white" />
+                <p>Learn about Samochodówka’s best programms</p></a></div>
+            <div className="students light"><a href="/students" >
+                <Title title="For Students" underline="darkblue" text="white" />
+                <ul>
+                    <li>Timetables</li>
+                    <li>Highschool exam</li>
+                    <li>Professional exam</li>
+                    <li>Career advisor EU projects</li>
+                </ul></a></div>
+            <div className="idziennik dark"><a href="https://adfs.eduportal.koszalin.pl" ><Title title="iDziennik" underline="lightblue" text="white" /></a></div>
+         </div>
+         <div className="apply dark"><a href="https://portal.eduportal.koszalin.pl/jst/koszalin/CMS/nabor-k.aspx" >
+            <h1>Apply Now</h1>
+            <img src={`${process.env.PUBLIC_URL}/assets/apply-now.png`} alt="photography of a girl smiling and holding books" /></a></div>
+     </section>
+
+     <section className="top-section-homepage-desktop">
+         <div className="desktop-top-section">
+             <div class="covid-and-specializations">
+                <div className="covid-info dark"><a href="/wip">
+                    <Title title="Covid-19 Updates" underline="lightblue" text="white" />
+                    <p>News and updates about current Covid restritctions at our school</p>
+                    </a></div>
+                <div className="specializarions light"><a href="/specializations">
+                    <Title class="button" title="Specializations" underline="darkblue" text="white" />
+                    <p>Learn about Samochodówka’s best programms</p>
+                    <img src={`${process.env.PUBLIC_URL}/assets/car-specializations.png`} alt="white syluete of a car" />
+                    </a></div>
+            </div>
+            <div className="apply dark"><a href="https://portal.eduportal.koszalin.pl/jst/koszalin/CMS/nabor-k.aspx" >
+            <h1>Apply Now</h1></a>
+            <img src={`${process.env.PUBLIC_URL}/assets/apply-now.png`} /></div>
+
+            <div className="students light"><a href="/students" >
+                <Title title="For Students" underline="darkblue" text="white" />
+                <ul>
+                    <li>Timetables</li>
+                    <li>Highschool exam</li>
+                    <li>Professional exam</li>
+                    <li>Career advisor EU projects</li>
+                </ul>
+                <img src={`${process.env.PUBLIC_URL}/assets/car-students.png`} />
+                    </a></div>
+            <div className="idziennik dark">
+                <a href="https://adfs.eduportal.koszalin.pl" ><Title class="button" title="iDziennik" underline="lightblue" text="white" />
+                </a>
+                <img src={`${process.env.PUBLIC_URL}/assets/idziennik.png`} alt="photography of two parents using a computer" />
+                </div>
+         </div>
+         
+     </section>
+
+    <div className="calendar-lucky-number" >
      <section className="calendar-home">
          <Title title="Calendar" underline="lightblue" text="darkblue" />
          <ul className="calendar-months" >
@@ -51,7 +113,7 @@ function Home() {
             {calendar.map((date) =>{
                 if(date.month === selectedMonth){
                     return (
-                        <li>
+                        <li key={date.eventtitle} >
                            <div>
                                 <h3>{date.date}</h3>
                                 <p>{date.month}</p></div>
@@ -63,6 +125,10 @@ function Home() {
             })}
          </ul>
      </section>
+     <LuckyNumber />
+     </div>
+     <News />
+
     </div>
   );
 }

@@ -1,0 +1,67 @@
+@use '../base/vars' as *;
+
+.footer{
+    width: 100%;
+    background-color: $lightblue;
+    color: $white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around   ;
+    flex-wrap: wrap;
+    .links-container{
+        min-width: 250px;
+        ul{
+            margin: 0;
+            padding: 0.5rem;
+            list-style: none;
+            li{
+                a{
+                    color: $white;
+                    text-decoration: none;
+                }
+                .hidden{
+                    display: none;
+                }
+            }
+        }
+    }
+    .logo-footer{
+        width: 150px;
+        text-align: center;
+        display: none;
+        h4{
+            margin: 0;
+        }
+        p{
+            margin: -1.5rem;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .contact-footer{
+        width: 200px;
+        margin-right: 6rem;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .footer{
+        padding-left:calc((100vw - 1250px)*0.125) ;
+        .logo-footer{
+            display: block;
+        }
+        .links-container{
+            display: flex;
+            ul{
+                padding-right: 2rem;
+            }
+            .hidden{
+                display: block;
+            }
+        }
+    }
+
+}

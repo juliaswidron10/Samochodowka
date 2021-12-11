@@ -1,12 +1,13 @@
 @use '../base/vars' as *;
 .navigation{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
     height: 3rem;
     align-items: center;
     width: 100%;
+    z-index: 1000;
     .navigation-logo-container{
         display: none;
     }
@@ -14,6 +15,8 @@
         display: none;
     }
     .burger-menu{
+        top: 0;
+        left: 0;
         z-index: 1000;
         margin: 15px;
         .burger-closed{
@@ -21,7 +24,7 @@
         }
     }
     .burger-menu-links{
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 100;
@@ -49,7 +52,13 @@
         }
     }
 }
-.top-section-homepage{
+.top-section-homepage-tablet{
+    display: none;
+}
+.top-section-homepage-desktop{
+    display: none;
+}
+.top-section-homepage, .top-section-homepage-tablet > div{
     a{
         text-decoration: none;
     }
@@ -69,6 +78,7 @@
     margin-top: 4rem;
     .calendar-months{
         padding-left: 2rem;
+        cursor: pointer;
         display: flex;
         flex-wrap: wrap;
         li{
@@ -81,6 +91,7 @@
     .calendar-events{
         list-style: none;
         padding-left: 2rem;
+        padding-right: 2rem;
         margin-top: 3rem;
         li{
             display: grid;
@@ -112,6 +123,7 @@
             h2{
                 grid-column: 2/-1;
                 margin: 0;
+                font-size: 1.2rem;
             }
             p{
                 grid-column: 2/-1;
@@ -184,10 +196,158 @@
         color: $darkblue;}
     }
 } 
+.top-section-homepage{
+    display: none;
 }
-@media only screen and (min-width: 1290px) {
-    .navigation {
-        margin: 0 auto;
-        max-width: 1400px;
+.top-section-homepage-desktop{
+    display: none;
+}
+.top-section-homepage-tablet{
+    display: flex;
+    div > div{
+        height: 14vw;
     }
+    div> div >a{
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        text-decoration: none;
+        p, ul{
+            width: 14rem;
+        }
+    }
+    .apply{
+        width: 38vw;
+        height: 65vw;
+        position: relative;
+        margin-left: 0.5rem;
+        h1{
+            background-color: $lightblue;
+            color: $white;
+            position: absolute;
+            top: 70%;
+            z-index: 100;
+            padding: 1rem;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            padding: 0.5rem 0;
+            z-index: 10;
+        }
+    }
+}
+}
+@media only screen and (min-width: 1000px) {
+    .navigation {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .navigation {
+        width: 100%;
+        max-width: 1400px;
+        left: calc((100vw - 1400px) * 0.5);
+    }
+    .top-section-homepage-tablet{
+        display: none;
+    }
+    .calendar-lucky-number{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-section-homepage-desktop{
+        display: block;
+        
+       .desktop-top-section{ 
+        display: flex;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 35rem;
+        flex-direction: row;
+        column-gap: 1rem;
+        a{
+            text-decoration: none;
+            color: white
+        }
+        .covid-and-specializations{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            row-gap: 1rem;
+            p{
+                margin: 1rem 2rem;
+                width: 300px
+            }
+            .covid-info {
+                width: 100%;
+                height: auto;
+                background-color: $darkblue;
+                padding-bottom: 2rem;
+            }
+            .specializarions{
+                width: 100%;
+                position: relative;
+                background-color: $lightblue;
+                height: 100%;
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+        }
+    }
+    .idziennik, .apply{
+        a{
+            height: auto;
+            width: auto;
+            z-index: 100;
+        }
+    }
+    .idziennik, .students, .apply{
+        position: relative;
+        height: 100%;
+        width: 20rem;
+        background-color: $darkblue;
+        &.light{
+            background-color: $lightblue;
+            img{
+                width: auto;
+
+            }
+        }
+        .title-container{
+            width: 75%
+        }
+        .button{
+            position: absolute;
+            width: 80%;
+            background-color: $darkblue;
+            z-index: 100%;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 10;
+        }
+    }
+}
+
 }

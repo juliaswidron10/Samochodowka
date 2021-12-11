@@ -1,0 +1,45 @@
+@use '../base/vars' as *;
+.photo-slides{
+    max-width: 500px ;
+}
+.photo-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    max-width: 500px ;
+    margin: 1rem;
+    img{
+        width: 100%;
+    }
+}
+.switch-container{    
+    padding: 1rem;
+    div{
+        background-color: $grey;
+        width: 20px;
+        height: 20px;
+        border-radius: 50% 50%;
+        margin-bottom: 5px;
+        cursor: pointer;
+        &.selected-button{
+            background-color: $lightblue;
+        }
+    }
+}
+.photo-title-container{
+    width: 13rem;
+    height: min-content;
+    background-color: $lightblue;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: -5rem;
+    z-index: 1000;
+    position: relative;
+    a{
+        text-decoration: none;
+        color: white;
+
+    }
+}
