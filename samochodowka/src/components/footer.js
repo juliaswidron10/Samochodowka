@@ -5,7 +5,7 @@ function Footer() {
     <div className="footer">
     <div className="links-container">
      <ul>
-         <li><a href="/parents"><strong>For Parents</strong></a></li>
+         <li><a href="/for-parents"><strong>For Parents</strong></a></li>
          <li className="hidden" ><a href="/wip">Parents Union</a></li>
          <li className="hidden" ><a href="https://adfs.eduportal.koszalin.pl">iDziennik</a></li>
          <li className="hidden" ><a href="/wip">Contact</a></li>

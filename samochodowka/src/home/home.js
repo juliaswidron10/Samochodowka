@@ -59,28 +59,31 @@ function Home() {
             <div className="idziennik dark"><a href="https://adfs.eduportal.koszalin.pl" ><Title title="iDziennik" underline="lightblue" text="white" /></a></div>
          </div>
          <div className="apply dark"><a href="https://portal.eduportal.koszalin.pl/jst/koszalin/CMS/nabor-k.aspx" >
-            <h1>Apply Now</h1>
+            {/* <h1>Apply Now</h1> */}
+            <div className="button-top-part" ><h1>Apply Now</h1></div>
             <img src={`${process.env.PUBLIC_URL}/assets/apply-now.png`} alt="photography of a girl smiling and holding books" /></a></div>
      </section>
 
      <section className="top-section-homepage-desktop">
          <div className="desktop-top-section">
-             <div class="covid-and-specializations">
+             <div  data-aos="fade-right" class="covid-and-specializations">
                 <div className="covid-info dark"><a href="/wip">
                     <Title title="Covid-19 Updates" underline="lightblue" text="white" />
                     <p>News and updates about current Covid restritctions at our school</p>
                     </a></div>
-                <div className="specializarions light"><a href="/specializations">
+                <div data-aos="fade-right" className="specializarions light"><a href="/specializations">
                     <Title class="button" title="Specializations" underline="darkblue" text="white" />
                     <p>Learn about Samochodówka’s best programms</p>
                     <img src={`${process.env.PUBLIC_URL}/assets/car-specializations.png`} alt="white syluete of a car" />
                     </a></div>
             </div>
-            <div className="apply dark"><a href="https://portal.eduportal.koszalin.pl/jst/koszalin/CMS/nabor-k.aspx" >
-            <h1>Apply Now</h1></a>
+            <div data-aos="fade-left" className="apply dark"><a href="https://portal.eduportal.koszalin.pl/jst/koszalin/CMS/nabor-k.aspx" >
+            {/* <h1>Apply Now</h1> */}
+            <div className="button-top-part" ><h1>Apply Now</h1></div>
+            </a>
             <img src={`${process.env.PUBLIC_URL}/assets/apply-now.png`} /></div>
 
-            <div className="students light"><a href="/students" >
+            <div data-aos="fade-left" className="students light"><a href="/students" >
                 <Title title="For Students" underline="darkblue" text="white" />
                 <ul>
                     <li>Timetables</li>
@@ -90,9 +93,10 @@ function Home() {
                 </ul>
                 <img src={`${process.env.PUBLIC_URL}/assets/car-students.png`} />
                     </a></div>
-            <div className="idziennik dark">
+            <div  data-aos="fade-left" className="idziennik dark">
                 <a href="https://adfs.eduportal.koszalin.pl" ><Title class="button" title="iDziennik" underline="lightblue" text="white" />
                 </a>
+                <div className="button-top-part" ><h1>iDziennik</h1></div>
                 <img src={`${process.env.PUBLIC_URL}/assets/idziennik.png`} alt="photography of two parents using a computer" />
                 </div>
          </div>

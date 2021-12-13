@@ -199,6 +199,17 @@
 .top-section-homepage{
     display: none;
 }
+.button-top-part{
+    z-index: 1000;
+    display: initial;
+    position: absolute;
+    background-color: $darkblue;
+    color: $white;
+    width: 80%;
+    text-align: center;
+    margin-left: 1.5rem;
+    top: 70%
+}
 .top-section-homepage-desktop{
     display: none;
 }

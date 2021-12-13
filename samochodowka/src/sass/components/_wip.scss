@@ -1,0 +1,34 @@
+@use '../base/vars' as *;
+
+.wip{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 4rem;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    img{
+        margin-top: 4rem;
+        width: 40%;
+        height: auto;
+        animation: sizeup 8s infinite;
+    }
+}
+@keyframes sizeup {
+    0%{
+        width: 40%;
+    }
+    50%{
+        width: 20%;
+    }
+    100%{
+        width: 40%;
+    }
+}

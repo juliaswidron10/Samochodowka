@@ -27,7 +27,7 @@ function Specializations() {
       }, []);
   return (
     <div className="specializations">
-        <div className="specializations-top-part" >
+        <div className="specializations-top-part"  data-aos="fade-up" >
             <div className="texts">
                 <Title title="Specializations" underline="lightblue" text="darkblue" />
                 <p><strong>5-year car technical school:</strong><br/>
