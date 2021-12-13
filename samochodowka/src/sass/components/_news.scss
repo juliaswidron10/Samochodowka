@@ -1,0 +1,50 @@
+@use '../base/vars' as *;
+
+.news-container{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+
+    a{
+        text-decoration: none;
+        color: $darkblue;
+    }
+    section{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.5rem;
+    div.article{
+        display:flex;
+        flex-direction: column;
+        width: 264px;
+        justify-content: center;
+        margin-bottom: 1rem;
+        h2{
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+        }
+    }
+}
+}
+@media only screen and (min-width: 820px) {
+    .news-container{
+        section{
+            justify-content: left;
+        }
+    }
+
+}
+@media only screen and (min-width: 1250px) {
+    .news-container{
+        section{
+            margin-top: 1.5rem;
+        }
+    }
+
+}

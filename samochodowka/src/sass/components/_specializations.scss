@@ -1,0 +1,82 @@
+@use '../base/vars' as *;
+
+.specializations{
+    p{
+        padding: 0 2rem;
+    }
+    a{
+        color: $darkblue;
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+    }
+    .specializations-top-part{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        align-items: center;
+    }
+    .specializations-container{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div.specialization{
+            width: 90vw;
+            max-width: 350px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            color: $darkblue;
+            
+            img{
+                align-self: center;
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+            h1{
+                text-align: center;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+        }
+@media only screen and (min-width: 820px) { 
+    .specializations{
+    .specializations-top-part{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            width: 40%;
+            height: 100%;
+            margin: 1rem;
+            justify-self: center;
+         }
+    }
+    .specializations-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+}
+@media only screen and (min-width: 1250px) { 
+    .specializations{
+        .specializations-top-part{
+            img{
+                width: 60%;
+            }
+        }}
+}

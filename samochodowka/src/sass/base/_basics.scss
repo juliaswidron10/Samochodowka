@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+    //to do: on desktop it should be 100%
+    overflow-x: hidden;
+    font-family: "Montserrat";
+    color: #000625;
+  }
+  
+  #root {
+    overflow-x: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  p {
+    margin-bottom: 0px !important;
+  }

@@ -1,0 +1,95 @@
+@use '../base/vars' as *;
+
+.Recruitation{
+    .top-part-texts{
+        p{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .links{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            div{
+                width: 10rem;
+                text-align: center;
+                margin: 1rem;
+                h2{
+                    font-size: 1rem;
+                }
+                &.secondary-link{
+                    border: solid 4px $lightblue;
+                    a{
+                        color: $lightblue;
+                        text-decoration: none;
+                    }
+                }
+                &.primary-link{
+                    background-color: $lightblue;
+                    border: solid 4px $lightblue;
+                    a{
+                        color: $white;
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+    }
+    section.school-props{
+        margin-top: 6rem;
+        color: $darkblue;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        img{
+            width: 300px;
+        }
+        h3{
+            width: 300px;
+            text-align: center;
+        }
+    }
+    .slide-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .our-partners{
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        img{
+            margin-top: 1rem;
+            width: 100%;
+        }
+    }
+}
+@media only screen and (min-width: 820px) {
+    .Recruitation{
+        .top-part{
+            display: flex;
+            column-gap: 2rem;
+            justify-content: space-between;
+        }
+        .top-part-texts{
+            width: 90%;
+            max-width: 40rem;
+            align-self: center;
+            .links{
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-right: 2rem;
+            }
+        }
+        .slide-container{
+            justify-content: flex-end;
+        }
+    }
+}
