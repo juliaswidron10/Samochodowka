@@ -41,7 +41,7 @@ function PhotoSlides() {
     .then(response => response.json())
     .then(response => { 
         let list = []
-        response.map( e => {
+        response.forEach( e => {
             let object = {
                 name: e.name,
                 image: e.image,
@@ -50,7 +50,6 @@ function PhotoSlides() {
             list.push(object);
         })
         setSlides(list);
-        console.log(slides);
     })
       }, []);
 

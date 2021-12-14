@@ -2,7 +2,7 @@ import '../App.scss';
 import PhotoSlides from '../components/photo-slides';
 import Title from '../components/title';
 import Specializations from '../components/specializations';
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -21,11 +21,11 @@ function Recruitation() {
           <p>We offer free B category driving training for selected professions. We support our students by providing practice with the best partners in region and internationally.</p>
           <div className="links">
             <div className="secondary-link" >
-              <a href="">
+              <a href="/wip">
                 <h2>Recruitation rules</h2>
             </a></div>
             <div className="primary-link" >
-              <a href="">
+              <a href="https://portal.eduportal.koszalin.pl/jst/koszalin/CMS/nabor-k.aspx">
                 <h2>Apply now</h2>
             </a></div>
           </div>

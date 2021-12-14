@@ -7,7 +7,7 @@ function ForParents() {
       <section className="top-section-homepage">
          <div className="idziennik light"><a href="https://adfs.eduportal.koszalin.pl" ><Title title="iDziennik"  underline="darkblue" text="white" />
          <div className="button-top-part" ><h1>iDziennik</h1></div>
-         <img src={`${process.env.PUBLIC_URL}/assets/idziennik.png`} alt="photo od two adults looking at the computer" /> </a></div>
+         <img src={`${process.env.PUBLIC_URL}/assets/idziennik.png`} alt="two adults looking at the computer" /> </a></div>
          <div className="parents-union light"><a href="/wip"><Title title="Parents Union" underline="darkblue" text="white" />
           <ul>
             <li>Budget</li>
@@ -17,7 +17,7 @@ function ForParents() {
          </a></div>
          <div className="school-housing light"><a href="/specializations"><Title title="School Housing" underline="darkblue" text="white" />
          <div className="button-top-part" ><h1>School Housing</h1></div>
-         <img src={`${process.env.PUBLIC_URL}/assets/housing.png`} alt="photo of many shelves full of keys" /> 
+         <img src={`${process.env.PUBLIC_URL}/assets/housing.png`} alt=" many shelves full of keys" /> 
          </a></div>
          <div className="contact contact-parents dark"><a href="/wip" ><Title title="Contact Us" underline="lightblue" text="white" />
             <div className="contact-container"> 

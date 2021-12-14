@@ -22,11 +22,11 @@ function ForStudents() {
        </a></div>
        <div className="advisor el dark"><a href="/wip"><Title title="Career Advisor" underline="lightblue" text="white" />
        <div className="button-top-part" ><h1>Career Advisor</h1></div>
-       <img className="background-image" src={`${process.env.PUBLIC_URL}/assets/careeradvisor.png`} alt="photo of a woman in formal clothes smiling" /> 
+       <img className="background-image" src={`${process.env.PUBLIC_URL}/assets/careeradvisor.png`} alt="a woman in formal clothes smiling" /> 
        </a></div>
        <div className="timetable el light"><a href="/wip"><Title title="Timetables" underline="darkblue" text="white" />
        <div className="button-top-part" ><h1>Timetable</h1></div>
-       <img className="background-image" src={`${process.env.PUBLIC_URL}/assets/timetables.png`} alt="photo of a spradsheet with schedules" /> 
+       <img className="background-image" src={`${process.env.PUBLIC_URL}/assets/timetables.png`} alt=" a spradsheet with schedules" /> 
        </a></div>
        <div className="euprojects el dark"><a href="/wip"><Title title="EU projects" underline="lightblue" text="white" />
        </a></div>

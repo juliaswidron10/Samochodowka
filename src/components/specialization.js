@@ -22,7 +22,7 @@ function Specialization() {
     .then(response => response.json())
     .then(response => {
         setSpecializations(response)
-        response.map( e => {
+        response.forEach( e => {
             if(e.name === 'Mechanical technician'){
                 const list = e.theoreticalSubjects.split('-');
                 e.theoreticalSubjects = list;

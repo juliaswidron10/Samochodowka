@@ -22,7 +22,6 @@ function Specializations() {
     .then(response => response.json())
     .then(response => { 
         setSpecializations(response);
-        console.log(specializations);
     })
       }, []);
   return (

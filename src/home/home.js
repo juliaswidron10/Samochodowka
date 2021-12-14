@@ -81,7 +81,7 @@ function Home() {
             {/* <h1>Apply Now</h1> */}
             <div className="button-top-part" ><h1>Apply Now</h1></div>
             </a>
-            <img src={`${process.env.PUBLIC_URL}/assets/apply-now.png`} /></div>
+            <img src={`${process.env.PUBLIC_URL}/assets/apply-now.png`} alt=" a smiling girl carrying a book" /></div>
 
             <div data-aos="fade-left" className="students light"><a href="/students" >
                 <Title title="For Students" underline="darkblue" text="white" />
@@ -91,7 +91,7 @@ function Home() {
                     <li>Professional exam</li>
                     <li>Career advisor EU projects</li>
                 </ul>
-                <img src={`${process.env.PUBLIC_URL}/assets/car-students.png`} />
+                <img src={`${process.env.PUBLIC_URL}/assets/car-students.png`} alt="line art of a sport car in white color" />
                     </a></div>
             <div  data-aos="fade-left" className="idziennik dark">
                 <a href="https://adfs.eduportal.koszalin.pl" ><Title class="button" title="iDziennik" underline="lightblue" text="white" />
@@ -125,6 +125,8 @@ function Home() {
                            <p>{date.eventdescription}</p>
                         </li>
                     )
+                }else{
+                    return null
                 }
             })}
          </ul>
