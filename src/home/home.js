@@ -66,13 +66,13 @@ function Home() {
 
      <section className="top-section-homepage-desktop">
          <div className="desktop-top-section">
-             <div  data-aos="fade-right" class="covid-and-specializations">
+             <div  data-aos="fade-right" className="covid-and-specializations">
                 <div className="covid-info dark"><a href="/wip">
                     <Title title="Covid-19 Updates" underline="lightblue" text="white" />
                     <p>News and updates about current Covid restritctions at our school</p>
                     </a></div>
                 <div data-aos="fade-right" className="specializarions light"><a href="/specializations">
-                    <Title class="button" title="Specializations" underline="darkblue" text="white" />
+                    <Title className="button" title="Specializations" underline="darkblue" text="white" />
                     <p>Learn about Samochodówka’s best programms</p>
                     <img src={`${process.env.PUBLIC_URL}/assets/car-specializations.png`} alt="white syluete of a car" />
                     </a></div>
@@ -94,7 +94,7 @@ function Home() {
                 <img src={`${process.env.PUBLIC_URL}/assets/car-students.png`} alt="line art of a sport car in white color" />
                     </a></div>
             <div  data-aos="fade-left" className="idziennik dark">
-                <a href="https://adfs.eduportal.koszalin.pl" ><Title class="button" title="iDziennik" underline="lightblue" text="white" />
+                <a href="https://adfs.eduportal.koszalin.pl" ><Title className="button" title="iDziennik" underline="lightblue" text="white" />
                 </a>
                 <div className="button-top-part" ><h1>iDziennik</h1></div>
                 <img src={`${process.env.PUBLIC_URL}/assets/idziennik.png`} alt="photography of two parents using a computer" />

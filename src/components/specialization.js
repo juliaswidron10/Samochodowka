@@ -59,7 +59,7 @@ function Specialization() {
         <h2>General knowledge</h2>
         <p>{specialization.generalKnowledge}</p>
         <h2>Professional knowledge</h2>
-        <p class="no-padding" >Theoretical subjects:<br />{specialization.theoreticalSubjects}</p>
+        <p className="no-padding" >Theoretical subjects:<br />{specialization.theoreticalSubjects}</p>
         <p>Practical subjects:<br />{specialization.practicalItems}</p>
         </div>
     </div>
